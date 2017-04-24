@@ -1,0 +1,25 @@
+<resources>
+    <string name="inter_ad_unit_id">ca-app-pub-3554469766925635/5029246702</string>
+    <string name="banner_ad_unit_id">ca-app-pub-3554469766925635/3295161508</string>
+
+    <string name="app_name">Thiệp Chúc Tết</string>
+    <string name="hint_wish">Lời chúc của bạn...</string>
+    <string name="confirm_save">Bạn có muốn lưu lại trước khi thoát không?</string>
+    <string name="confirm_merge1">Ảnh sẽ được lưu đè lên \"</string>
+    <string name="confirm_merge2">.png\". Bạn có muốn tiếp tục?</string>
+
+    <string name="title_activity_collection">Collection</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_text_wish">Lời Chúc</string>
+    <string name="menu_card_wish">Thiệp Chúc</string>
+    <string name="menu_your_collection">Bộ Sưu Tập</string>
+    <string name="menu_how_to">Hướng dẫn</string>
+
+    <string name="back">QUAY LẠI</string>
+    <string name="share">CHIA SẺ</string>
+    <string name="save">LƯU</string>
+    <string name="delete">XOÁ</string>
+    <string name="new_item">MỚI</string>
+</resources>

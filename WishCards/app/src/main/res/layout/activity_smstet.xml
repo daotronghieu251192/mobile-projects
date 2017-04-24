@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/image_top"></ImageView>
+
+    <com.baoyz.swipemenulistview.SwipeMenuListView
+        android:id="@+id/lvLunarDetail"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6.5"
+        android:background="#B71C1C"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="20dp" />
+
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#B71C1C"
+        android:text="@string/back"
+        android:textColor="#FFF"
+        android:textSize="25sp" />
+
+
+</LinearLayout>

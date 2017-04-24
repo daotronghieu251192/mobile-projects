@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/background_top" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/edit_text_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/item_margin"
+            android:layout_weight="6.5"
+            android:background="@android:color/white"
+            android:hint="@string/hint_wish"
+            android:minLines="10"
+            android:textAlignment="center">
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#FFF"
+            android:clickable="false"
+            android:focusable="false"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_marginBottom="1dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>

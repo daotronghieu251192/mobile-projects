@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="deep_blue">#213b3b</color>
+    <color name="orange">#ffa800</color>
+
+    <string name="app_name">Viet Chords</string>
+    <string name="window_icon">Window icon</string>
+    <string name="hide">Hide</string>
+    <string name="close">Close</string>
+    <string name="corner">Corner</string>
+    <string name="maximize">Maximize</string>
+    <string name="title_activity_chord__detail">Chord_Detail</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_look_up_chord">LookUpChordActivity</string>
+    <string name="banner_ad_unit_id">ca-app-pub-3554469766925635/9109409906</string>
+
+</resources>

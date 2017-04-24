@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Screen Filter</string>
+
+    <string name="inter_ad_id">ca-app-pub-3554469766925635/4527889103</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+</resources>

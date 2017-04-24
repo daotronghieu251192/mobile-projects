@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.summerlab.wishcards.CardWishesActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:gravity="center">
+
+            <com.summerlab.wishcards.SourceImageView
+                android:id="@+id/img_background"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/item_margin"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/sticker_content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <org.lucasr.twowayview.TwoWayView
+                android:id="@+id/list_sticker"
+                style="@style/TwoWayView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawSelectorOnTop="false"></org.lucasr.twowayview.TwoWayView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/text_content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edit_text_wish"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:layout_weight="8"
+                android:hint="@string/hint_wish" />
+
+            <ImageButton
+                android:id="@+id/color_picker"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_bg"
+                android:paddingBottom="@dimen/item_margin"
+                android:paddingTop="@dimen/item_margin"
+                android:scaleType="fitEnd" />
+
+            <!--<ImageButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:paddingBottom="@dimen/item_margin"
+                android:paddingTop="@dimen/item_margin"
+                android:scaleType="fitEnd"
+                android:src="@drawable/remove_icon" />-->
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_theme"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:padding="2dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/theme_icon" />
+
+            <ImageButton
+                android:id="@+id/btn_switch_mode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:padding="2dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/text_icon" />
+
+            <ImageButton
+                android:id="@+id/btn_eraser_mode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:padding="2dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/eraser_icon_disable" />
+
+            <LinearLayout
+                android:id="@+id/sticker_spinner_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:visibility="gone">
+
+                <Spinner
+                    android:id="@+id/select_sticker_cat"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></Spinner>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/text_spinner_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:gravity="end"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <Spinner
+                    android:id="@+id/select_font_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"></Spinner>
+
+                <Spinner
+                    android:id="@+id/select_font_size"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"></Spinner>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <!--<org.lucasr.twowayview.TwoWayView
+            android:id="@+id/list_background"
+            style="@style/TwoWayView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawSelectorOnTop="false"></org.lucasr.twowayview.TwoWayView>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_back"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="@string/back"
+                android:textColor="#F44336" />
+
+            <Button
+                android:id="@+id/btn_share"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="@string/share"
+                android:textColor="#3F51B5" />
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="@string/save"
+                android:textColor="#4CAF50" />
+
+            <Button
+                android:id="@+id/btn_new"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="@string/new_item"
+                android:textColor="#2196F3" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/expanded_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+</FrameLayout>

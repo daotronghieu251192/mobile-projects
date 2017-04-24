@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center_vertical"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/favoriteImg_resultSceen"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/songName_resultScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="song name"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/songFirstLyric_resultScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="sans-serif-light"
+            android:singleLine="true"
+            android:text="First Lyric" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/favoriteImg_resultSceen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="2dp"
+        android:background="@null"
+        android:scaleX="0.5"
+        android:scaleY="0.5"
+        android:src="@drawable/favorite" />
+
+</RelativeLayout>
